@@ -2,24 +2,66 @@
 <html>
     <head>
         <title>Latihan - Ngotaku</title>
-        <link rel="stylesheet" href="pertanyaan.css">
+        <link rel="stylesheet" href="latihan.css">
     </head>
    
     <body>
 	    <img src="Logo.png" alt="Logo Ngotaku"> 
 		<div class="topnav">
-		<a href="index.html">Home</a>
-        <a href="buku.html">Buku</a>
-        <a href="pertanyaan.html">Pertanyaan</a>
-        <a class="active" href="latihan.html">Latihan</a>
-		<a href="buat.html">Daftar</a>
-		<a href="masuk.html">Masuk</a>
+		<a href="index.html">&#x1F3E0;  Home</a>
+        <a href="buku.html">&#x1F4D6; Buku</a>
+        <a href="pertanyaan.html">&#x2753; Pertanyaan</a>
+        <a class="active" href="latihan.html">&#x1F4CB; Latihan</a>
+		<a href="tentang.html">&#x1F3FD; Tentang</a>
+		<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#x1F53D; Menuju akun Anda
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="buat.html">Daftar</a>
+    <a href="masuk.html">Masuk</a>
+  </div>
+        </div>
 	    </div>
         <div class="container">
 		  <pre>
-<h1>Mohon maaf, belum ada latihan</h1>
+<h1>Silahkan unduh PDF berisikan soal-soal untuk latihan dibawah ini</h1>
 
+<a href="soal try out kimia.doc">-   Soal Try Out Kimia 1</a>
+
+<a href="SOAL UNBK 2019 5 DAN 6.docx">-   SOAL UNBK 2019 5 DAN 6</a>
+
+<a href="SOAL USBN1 2018 01.docx">-   SOAL USBN1 2018 01</a>
+
+<a href="Soal-dan-Pembahasan-PMB-PKN-STAN-2017.pdf">-   Soal-dan-Pembahasan-PMB-PKN-STAN-2017</a> 
+
+
+
+
+
+
+
+
+
+                                            Halaman  01
           </pre>
         </div>
+		<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 	</body>
 </html>
