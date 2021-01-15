@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tentang Aplikasi - Ngotaku</title>
+        <link rel="stylesheet" href="outdex.css">
+    </head>
+   
+    <body>
+	    <img src="Logo.png" alt="Logo Ngotaku"> 
+		<div class="topnav">
+		<a href="index.html">&#x1F3E0; Home</a>
+        <a href="buku.html">&#x1F4D6; Buku</a>
+        <a href="pertanyaan.html">&#x2753; Pertanyaan</a>
+        <a href="latihan.html">&#x1F4CB; Latihan</a>
+		<a class="active" href="tentang.html">&#x1F3FD; Tentang</a>
+		<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#x1F53D; Menuju akun Anda
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="buat.html">Daftar</a>
+    <a href="masuk.html">Masuk</a>
+  </div>
+        </div>
+		<div class="container">
+          <h1>Tentang Aplikasi</h1>
+		  <pre>
+		  
+     Menurut Survei Political And Economic Risk Consultan (PERC), kualitas pendidikan di Indonesia 
+berada pada urutan ke-12 dari 12 negara di Asia. Posisi Indonesia berada di bawah   Vietnam. Data 
+yang dilaporkan  The World Economic Forum Swedia (2000), Indonesia memiliki daya saing    yang 
+rendah,  yaitu hanya menduduki urutan ke-37 dari 57 negara yang disurvei  di dunia.
+
+    Penyebab rendahnya mutu pendidikan di Indonesia antara lain adalah masalah efektivitas,
+efisiensi, dan standarisasi pengajaran,selain kurang kreatifnya para pendidik dalam 
+membimbing siswa, kurikulum yang membuat pendidikan semakin mundur. Kurikulum hanya 
+didasarkan pada pengetahuan pemerintah tanpa memperhatikan kebutuhan masyarakat.
+
+    Kami mengembangkan aplikasi ini agar dapat membantu siswa dan semuanya agar mendapatkan
+pembelajaran secara eksternal. Melihat kualitas Indonesia yamg memprihatinkan, kami berharap
+aplikasi ini dapat bermanfaat untuk pengembangan pendidikan Indonesia. Sehingga generasi
+penerus dapat meningkatkan kualitas pendidikan Indonesia.
+          </pre>
+        </div>
+		<div class="ket"> 
+		@2020. All rights reserved                             
+		</div>
+		<div class="video">
+		<video width="450" controls>
+			<source src="pendidikanindonesia.mp4" type="video/mp4"/>
+			your browser not support video tag
+	    </video>
+		</div>
+		<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+    </body>
+</html>
