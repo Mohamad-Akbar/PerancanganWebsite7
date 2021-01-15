@@ -8,23 +8,47 @@
     <body>
 	    <img src="Logo.png" alt="Logo Ngotaku">
 		<div class="topnav">
-		<a href="index.html">Home</a>
-        <a href="buku.html">Buku</a>
-        <a href="pertanyaan.html">Pertanyaan</a>
-        <a href="latihan.html">Latihan</a>
-		<a href="buat.html">Daftar</a>
-		<a class="active" href="masuk.html">Masuk</a>
+		<a href="index.html">&#x1F3E0;  Home</a>
+        <a href="buku.html">&#x1F4D6; Buku</a>
+        <a href="pertanyaan.html">&#x2753; Pertanyaan</a>
+        <a href="latihan.html">&#x1F4CB; Latihan</a>
+		<a href="tentang.html">&#x1F3FD; Tentang</a>
+		<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#x1F53D; Menuju akun Anda
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="buat.html">Daftar</a>
+    <a href="masuk.html">Masuk</a>
+  </div>
         </div>
-	    <p> Belum punya akun? Silahkan masuk <a href="buat.html">di sini</a></p>
+	    
         <div class="container">
           <h1>Masuk</h1>
             <form>
                 <label>Username</label><br>
-                <input type="text"><br>
+                <input type="text" maxlength="24" required="required"><br>
                 <label>Password</label><br>
-                <input type="password"><br>
-                <button>Masuk</button>
+                <input type="password" maxlength="16" required="required"><br>
+                <button onclick="alert('Mohon maaf, username atau password salah. Silahkan coba lagi')">Masuk</button>
             </form>
-        </div>     
+        </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>				
     </body>
 </html>
