@@ -2,35 +2,60 @@
 <html>
     <head>
         <title> Apa yang dimaksud dengan Domain, Kodomain, dan Range? - Ngotaku</title>
-        <link rel="stylesheet" href="pertanyaan.css">
+        <link rel="stylesheet" href="domain.css">
     </head>
    
     <body>
 	    <img src="Logo.png" alt="Logo Ngotaku"> 
 		<div class="topnav">
-		<a href="index.html">Home</a>
-        <a href="buku.html">Buku</a>
-        <a href="pertanyaan.html">Pertanyaan</a>
-        <a href="latihan.html">Latihan</a>
-		<a href="buat.html">Daftar</a>
-		<a href="masuk.html">Masuk</a>
+		<a href="index.html">&#x1F3E0;  Home</a>
+        <a href="buku.html">&#x1F4D6; Buku</a>
+        <a href="pertanyaan.html">&#x2753; Pertanyaan</a>
+        <a href="latihan.html">&#x1F4CB; Latihan</a>
+		<a href="tentang.html">&#x1F3FD; Tentang</a>
+		<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">&#x1F53D; Menuju akun Anda
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="buat.html">Daftar</a>
+    <a href="masuk.html">Masuk</a>
+  </div>
+        </div>
 	    </div>
         <div class="container">
-		  <pre>
-<h1>Tanya Jawab</h1>
-		  
+		  <p>
 Q : Apa yang dimaksud dengan Domain, Kodomain, dan Range? 
-
-
-A : Domain merupakan daerah asal, kodomain merupakan daerah 
-kawan, dan range merupakan daerah hasil
-
-
-
-
-(Terverifikasi)
-
-          </pre>
+          </p>
         </div>
+		<div>
+		<img class="bocah" src="bocahindo1.png" alt="Boi" width="80" height="80" >
+		</div>
+		<div>
+		<img class="gadis" src="gadisindo2.png" alt="Gurl" width="80" height="80" >
+		</div>
+		<div class="container2">
+		  <p>
+A : Domain merupakan daerah asal. Kodomain adalah daerah kawan. Daerah kawan yang dimaksud disini adalah daerah kawan dari domain.
+Range adalah daerah semua anggota kodomain yang mendapatkan pasangan dari domain.
+          </p>
+        </div>
+		<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 	</body>
 </html>
