@@ -14,14 +14,14 @@ body{
 
 p{
 	position: absolute;
-	left: 29%;
-	top: 90%;
+	left: 35%;
+	top: 80%;
 }
 
 .image2{
 	position: absolute;
 	left: 5%;
-	top: 30%;
+	top: 27%;
 }
 
 .topnav {
@@ -38,9 +38,53 @@ p{
   font-size: 17px;
 }
 
-.topnav a:hover {
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus{
   background-color: #ddd;
   color: black;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 .topnav a.active {
@@ -48,10 +92,9 @@ p{
   color: white;
 }
 
-
 .container{
     position: absolute;
-    left: 45%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 20px 25px;
@@ -88,4 +131,16 @@ p{
     background-color: green;
     font-size: 18px;
     color: #fafafa;
+}
+
+.bintang {
+	position: absolute;
+	top: 460px;
+	right: 1070px;
+}
+
+.baca {
+	position: absolute;
+	top: 150px;
+	right: 13px;
 }
